@@ -1,7 +1,7 @@
-package ru.javarush.cryptoanaliser.koroleva.app;
+package ru.javarush.cryptoanaliser.koroleva.toplevel;
 
 import ru.javarush.cryptoanaliser.koroleva.controller.MainController;
-import ru.javarush.cryptoanaliser.koroleva.Result;
+import ru.javarush.cryptoanaliser.koroleva.entity.Result;
 
 import java.util.Arrays;
 
@@ -13,8 +13,10 @@ public class Application {
     }
 
     public Result run(String[] args){
-        String command = args[0];
-        String[] parameters = Arrays.copyOfRange(args, 1, args.length);
+        //encode text.txt encoded.txt 45
+
+        String command = args[0]; //encode
+        String[] parameters = Arrays.copyOfRange(args, 1, args.length); //text.txt encoded.txt 45
         return mainController.execute(command,parameters);
     }
 

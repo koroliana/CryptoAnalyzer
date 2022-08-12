@@ -1,0 +1,11 @@
+package ru.javarush.cryptoanaliser.koroleva.commands;
+
+import ru.javarush.cryptoanaliser.koroleva.entity.Result;
+
+public class Encoder implements Action {
+    @Override
+    public Result execute(String[] parameters) {
+        //TODO need dev logic encrypt
+        return null;
+    }
+}
