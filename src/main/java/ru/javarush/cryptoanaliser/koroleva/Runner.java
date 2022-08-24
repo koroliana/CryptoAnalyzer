@@ -11,5 +11,7 @@ public class Runner {
         Application application = new Application(mainController);
         Result result = application.run(args);
         System.out.println(result);
+        System.out.println(result);
+        System.out.println(result);
     }
 }
